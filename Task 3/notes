@@ -1,0 +1,9 @@
+3. Create a registration page with 
+email, phone input and password 
+and  password confimr input, 
+also put a capttccha before 
+submitting form, make submit 
+button  disabled until all 
+fields are filled and captcha 
+is same.  
+Enable show passowrd using a icon

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-blue-100">
+    <div class="bg-red-200 flex flex-col justify-center m-10 p-5 rounded-2xl" id="colorOutput" >
+        <h1 class=" flex justify-center text-2xl text-blue-400">Choose a color to see the magic</h1>
+        
+        <div class="flex justify-center text-red-700">
+            <label for="colorChange">Change My Color </label>
+            <input type="color" class="rounded-full" name="colorChange" id="colorInput">
+        </div>
+        
+
+        <h2 class="flex justify-center hidden italic text-4xl text-green-400"  >Tadaa!!🤭</h2>
+
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>

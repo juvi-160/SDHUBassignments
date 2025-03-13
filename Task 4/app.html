@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex flex-col justify-center bg-red-100 m-10 p-10 rounded-2xl border-2">
+        <div class="flex flex-col justify-center">
+            <h1 class="text-2xl font-bold">TO-DO LIST!📑</h1>
+            <p>Create Your Todo List🖊️</p>            
+        </div>
+        <div class="flex justify-between bg-red-300 rounded-2xl m-5 p-5">
+            <input type="text" class="w-86" name="add" id="add" placeholder="What Are Your Tasks For Today?">
+            <button class="bg-white rounded-2xl p-2">ADD</button>
+        </div>
+        <div id="add">
+            <h1 class="flex justify-center hidden">ADDED TO YOUR LIST!!</h1>
+            <div class="bg-red-400 rounded-2xl flex justify-between p-5 m-5 border-2">
+                <h3 class="font-bold">Design a website</h3>
+                <button class="text-green-700">EDIT</button>
+                <button class="text-yellow-700">COMPLETED</button>
+                <button class="text-red-700">DELETE</button>
+            </div>
+            <div class="bg-red-400 rounded-2xl flex justify-between p-5 m-5 border-2">
+                <h3 class="font-bold">Design a website</h3>
+                <button class="text-green-700">EDIT</button>
+                <button class="text-yellow-700">COMPLETED</button>
+                <button class="text-red-700">DELETE</button>
+            </div>
+            <div class="bg-red-400 rounded-2xl flex justify-between p-5 m-5 border-2">
+                <h3 class="font-bold">Design a website</h3>
+                <button class="text-green-700">EDIT</button>
+                <button class="text-yellow-700">COMPLETED</button>
+                <button class="text-red-700">DELETE</button>
+            </div>
+
+        </div>
+        <div class="bg-yellow-200 rounded-2xl m-5 p-5 border-2" id="completed">
+            <h1 class="flex justify-center font-bold ">COMPLETED TASKS</h1>
+            <div>
+                <div class="bg-yellow-400 rounded-2xl flex justify-between p-5 mt-2 border-2">
+                    <h3 class="font-bold">Design a website</h3>
+                    <button class="text-yellow-700">COMPLETED</button>
+                </div>
+                <div class="bg-yellow-400 rounded-2xl flex justify-between p-5 mt-2 border-2">
+                    <h3 class="font-bold">Design a website</h3>
+                    <button class="text-yellow-700">COMPLETED</button>
+                </div>
+                <div class="bg-yellow-400 rounded-2xl flex justify-between p-5 mt-2 border-2">
+                    <h3 class="font-bold">Design a website</h3>
+                    <button class="text-yellow-700">COMPLETED</button>
+                </div>
+
+        </div>
+        </div>
+
+        <div class="bg-green-200 rounded-2xl m-5 p-5 border-2" id="edited">
+            <h1 class="flex justify-center font-bold ">COMPLETED TASKS</h1>
+            <div>
+                <div class="bg-green-400 rounded-2xl flex justify-between p-5 mt-2 border-2">
+                    <h3 class="font-bold">Design a website</h3>
+                    <button class="text-green-700">EDITED</button>
+                </div>
+                <div class="bg-green-400 rounded-2xl flex justify-between p-5 mt-2 border-2">
+                    <h3 class="font-bold">Design a website</h3>
+                    <button class="text-green-700">EDITED</button>
+                </div>
+                <div class="bg-green-400 rounded-2xl flex justify-between p-5 mt-2 border-2">
+                    <h3 class="font-bold">Design a website</h3>
+                    <button class="text-green-700">EDITED</button>
+                </div>
+
+        </div>
+
+        
+
+
+        </div>
+        
+
+        
+    </div>
+</body>
+</html>

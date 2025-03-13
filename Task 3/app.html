@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-red-300">
+    <div class="bg-red-100 flex flex-col justify-center m-10 ml-90 p-10 h-150 w-150 rounded-2xl border-2 border-black-200">
+        <h1 class="flex justify-center text-2xl m-2 p-2 ">Registration Form</h1>
+        
+        <label for="firstName" class="text-l">First Name:</label>
+        <input type="text" class="border-b-1 mb-5" id="firstName" name="firstName" required>
+
+        <label for="lastName" class="text-l">Last Name:</label>
+        <input type="text" class="border-b-1 mb-5" id="lastName" name="lastName" required>
+
+        <label for="email" class="text-l">Email :</label>
+        <input type="email" class="border-b-1 mb-5" name="email" id="email" required>
+
+        <label for="passwors" class="text-l">Password :</label>
+        <div class="flex">
+            <input type="password" class="border-b-1 mb-5 " name="password" id="password"><i class="fa-solid fa-eye text-[#818283]" id="showpass"></i><i class="fa-solid fa-eye-slash text-[#818283]" id="hidepass"></i>
+        </div>
+        
+
+        <label for="verifyPass" class="text-l">Verify Password:</label>
+        <div >
+            <input type="password" class="border-b-1 mb-5 " name="verifyPass" id="verifyPass" required><i class="fa-solid fa-eye text-[#818283]" id="showpass"></i><i class="fa-solid fa-eye-slash text-[#818283] " id="hidepass"></i>
+        </div>
+
+        <div>
+            <input type="checkbox" class="m-2 p-2" name="checkbox" id="checkbox" required>Terms and Conditions
+        </div>
+
+        <button class="bg-white rounded-xl mt-5 p-1">Submit</button>
+        
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
