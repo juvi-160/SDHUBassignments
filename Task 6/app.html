@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <div class="flex justify-center bg-red-300 mb-10 w-full">
+            <h1 class="font-bold text-2xl p-5">Image Carousel</h1>
+        </div>
+        
+        <!-- Carousel Container -->
+        <div class="relative w-96 h-64 border-2 overflow-hidden">
+            <img src="./Cat 1.jpg" alt="Cat 1" class="slides absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+            <img src="./Cat 2.jpg" alt="Cat 2" class="slides absolute w-full h-full object-cover opacity-0 transition-opacity duration-500">
+            <img src="./Cat 3.jpg" alt="Cat 3" class="slides absolute w-full h-full object-cover opacity-0 transition-opacity duration-500">
+            <img src="./Cat 4.jpg" alt="Cat 4" class="slides absolute w-full h-full object-cover opacity-0 transition-opacity duration-500">
+            <img src="./Cat 5.jpg" alt="Cat 5" class="slides absolute w-full h-full object-cover opacity-0 transition-opacity duration-500">
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex gap-4 mt-5">
+            <button onclick="prevSlide()" class="px-4 py-2 bg-blue-500 text-white rounded">Prev</button>
+            <button onclick="nextSlide()" class="px-4 py-2 bg-blue-500 text-white rounded">Next</button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
