@@ -1,29 +1,27 @@
-const slides = document.querySelectorAll('.slides');
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slides");
 
-let counter = 0;
-
-// Position each slide at 100% increments
-slides.forEach((slide, index) => {
-    slide.style.left = `${index * 100}%`;
-});
-
-const prevSlide = () => {
-    if (counter > 0) { // Prevent moving before the first slide
-        counter--;
-        slideImage();
-    }
-};
-
-const nextSlide = () => {
-    if (counter < slides.length - 1) { // Prevent moving after the last slide
-        counter++;
-        slideImage();
-    }
-};
-
-const slideImage = () => {
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${counter * 100}%)`;
-        slide.style.transition = "transform 0.5s ease-in-out"; // Smooth transition
+// Function to show the current slide
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.opacity = (i === index) ? "1" : "0"; // Show only the active slide
     });
-};
+}
+
+// Function for next slide
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % slides.length; // Loop back to first slide
+    showSlide(slideIndex);
+}
+
+// Function for previous slide
+function prevSlide() {
+    slideIndex = (slideIndex - 1 + slides.length) % slides.length; // Loop back to last slide
+    showSlide(slideIndex);
+}
+
+// Auto-play slides every 3 seconds
+setInterval(nextSlide, 5000);
+
+// Show first slide initially
+showSlide(slideIndex);

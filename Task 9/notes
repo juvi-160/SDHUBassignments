@@ -1,5 +1,5 @@
 9. Create a traffic signal 
 stimulator. 4 traffic lights 
-with green red yello colors 
+with green red yellow orange colors 
 working properly using settimeout
 and set interval.
