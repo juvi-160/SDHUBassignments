@@ -1,33 +1,48 @@
-const url = "https://api.github.com/users"
+const url = "https://api.github.com/users";
 
-const profile = document.querySelector('.profile');
-const username = document.querySelector('.username');
-const email = document.querySelector('.email');
-const createdAt = document.querySelector('.createdAt');
-const followers = document.querySelector('.followers');
-const following = document.querySelector('.following');
-const bio = document.querySelector('.bio');
+const profile = document.querySelector(".profile");
+const username = document.querySelector(".username");
+const email = document.querySelector(".email");
+const createdAt = document.querySelector(".createdAt");
+const followers = document.querySelector(".followers");
+const following = document.querySelector(".following");
+const bio = document.querySelector(".bio");
+const searchInput = document.getElementById("searchInput");
+const searchBtn = document.getElementById("searchBtn");
 
+async function fetchData(user) {
+  try {
+    const response = await fetch(`${url}/${user}`);
+    const data = await response.json();
 
-async function fetchData() {
-    try{
-        const response = await fetch(`${url}/juvi-160`);
-        const data = await response.json();
-        console.log([data.name, data.email, data.created_at, data.bio, data.followers, data.following, data.avatar_url]);
-
-        //updating html elements with fetched data
-        profile.innerHTML = `<img src="${data.avatar_url}" class=" h-25 w-25 rounded-full " alt="">` || "n/a";
-        username.textContent = `Username: ${data.name}`|| "N/A";
-        email.textContent = `Email: ${data.email}`|| "na"; // Email is often null due to privacy settings
-        createdAt.textContent = `Created At: ${new Date(data.created_at).toDateString()}`|| "na";
-        followers.textContent = `Followers: ${data.followers}` || "na";
-        following.textContent = `Following: ${data.following}` || "na";
-        bio.textContent = `Bio: ${data.bio}` || "na";;
-
-    } catch(error){
-        console.error("Error fetching data",error);
+    if (data.message === "Not Found") {
+      alert("User not found! Please try again.");
+      return;
     }
-    
+
+    profile.innerHTML = `<img src="${data.avatar_url}" class="h-24 w-24 rounded-full border-2 border-white" alt="">`;
+    username.textContent = `Username: ${data.name || "N/A"}`;
+    email.textContent = `Email: ${data.email || "N/A"}`;
+    createdAt.textContent = `Created At: ${
+      new Date(data.created_at).toDateString() || "N/A"
+    }`;
+    followers.textContent = `Followers: ${data.followers || "N/A"}`;
+    following.textContent = `Following: ${data.following || "N/A"}`;
+    bio.textContent = `Bio: ${data.bio || "N/A"}`;
+  } catch (error) {
+    console.error("Error fetching data", error);
+    alert("An error occurred while fetching data.");
+  }
 }
 
-fetchData();
+searchBtn.addEventListener("click", () => {
+  const user = searchInput.value.trim();
+  if (user) fetchData(user);
+});
+
+searchInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    const user = searchInput.value.trim();
+    if (user) fetchData(user);
+  }
+});
