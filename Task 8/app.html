@@ -14,34 +14,27 @@
     </div>
 
     <!-- Timer Container -->
-    <div class="bg-purple-400 rounded-xl mt-10 p-6 w-96 ring-2 shadow-lg flex flex-col items-center">
+    <div class="bg-purple-400 rounded-xl mt-10 p-6 w-96 shadow-2xl flex flex-col items-center">
 
         <!-- Title -->
-        <h1 class="text-2xl font-bold text-white mb-4">SET YOUR TIMER</h1>
+        <h1 class="text-2xl font-bold text-purple-950 mb-4">START YOUR TIMER</h1>
 
         <!-- Timer Display -->
-        <div class="relative flex justify-center items-center h-32 w-32 rounded-full bg-purple-400 shadow-lg">
-            <!-- Gradient Border -->
-            <div class="absolute inset-0 rounded-full p-[5px] bg-gradient-to-r from-violet-700 via-lime-300 to-violet-700">
-                <div class="h-full w-full bg-purple-400 rounded-full"></div>
-            </div>
+        <div class="relative flex justify-center items-center h-32 w-32">
             <!-- Timer Text -->
-            <h1 class="text-3xl font-bold text-white relative z-10">00:00</h1>
-        </div>
-
-        <!-- Timer Input -->
-        <div class="mt-6">
-            <input type="number" class="w-28 p-3 text-center border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Set Time">
+            <h1 class="timer text-6xl font-bold text-purple-800 relative z-10 drop-shadow-lg">00:00:00.00</h1>
         </div>
 
         <!-- Timer Buttons -->
-        <div class="mt-6 flex space-x-4">
-            <button class="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-xl shadow-md">▶️ START</button>
-            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-4 py-2 rounded-xl shadow-md">⏸️ PAUSE</button>
-            <button class="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-xl shadow-md">🔄️ RESET</button>
+        <div class="mt-4 flex space-x-4">
+            <button id="startBtn" class="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-2 py-2 rounded-xl shadow-md text-xl">▶️ START</button>
+            <button id="pauseBtn" class="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-2 py-2 rounded-xl shadow-md text-xl">⏸️ PAUSE</button>
+            <button id="resetBtn" class="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-2 py-2 rounded-xl shadow-md text-xl">🔄️ RESET</button>
         </div>
 
     </div>
+
+    <script src="./app.js"></script>
 
 </body>
 </html>
