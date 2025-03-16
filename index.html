@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@1,800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-950">
+<body class="bg-gray-950 font-family-Inter">
     <div class="header bg-gray-950 text-blue-500 flex justify-between p-5 " >
         <div>
 
         </div>
-        <div>
-            <a href="./index.html" class="p-5 m10">HOME</a>
-            <a href="#aboutMe" class="p-5 m10">ABOUT</a>
-            <a href="#myServices" class="p-5 m10">SERVICES</a>
-            <a href="#projects" class="p-5 m10">PROJECTS</a>
-            <a href="#contactMe" class="p-5 m10">CONTACT ME</a>
+        <div class="">
+            <a href="./index.html" class="p-5 m-10 hover:text-white">HOME</a>
+            <a href="#aboutMe" class="p-5 m-10 hover:text-white">ABOUT</a>
+            <a href="#myServices" class="p-5 m-10 hover:text-white">SERVICES</a>
+            <a href="#projects" class="p-5 m-10 hover:text-white">PROJECTS</a>
+            <a href="#contactMe" class="p-5 m-10 hover:text-white">CONTACT ME</a>
         </div>
         <div>
 
@@ -28,54 +28,54 @@
         
     </div>
 
-    <div class="nav bg-[url(imgbg.jpg)] bg-cover h-100 w-full flex flex-col justify-center ">
-        <p class="flex justify-center text-blue-800 text-xl p-5">Welcome to My Creative Space</p>
-        <h1 class="flex justify-center text-white text-2xl font-bold">I'm a Creative Freelancer Based In India</h1>
-        <p class="flex justify-center text-white text-xl p-5 ml-10 mr-10">I concentrate on creating digital experiences that are user-friendly, enjoyable and effective in achieving thier purpose.</p>
+    <div class="hero bg-[url(imgbg.jpg)] bg-center bg-cover h-[600px]  flex flex-col justify-center items-center ">
+        <p class="text-blue-500 text-2xl font-bold">Welcome to My Creative Space</p>
+        <h1 class="text-white text-center text-3xl font-bold p-10 mr-10 ml-10">I'm a passionate Full Stack Developer with expertise in building modern, user-friendly, and high-performance web applications.</h1>
+        <p class="text-white text-2xl p-5 ml-10 mr-10 font-bold">📌 Let’s collaborate to bring your ideas to life.</p>
        <div class="flex justify-center ">
-        <button class="bg-blue-800 rounded-full p-4 m-5 text-white">Let's Talk -></button>
+        <button class="bg-blue-800 font-bold text-xl rounded-full px-6 py-3 mt-5 text-white"><a href="#contactMe">Let's Talk -></a></button>
        </div>
     </div>
 
     <div class="myServices flex flex-col justify-between bg-gray-950" id="myServices">
         <div class="p-5 m-10">
-            <h1 class="text-blue-500 text-2xl pb-5">My Services</h1>
-            <h1 class="text-white text-xl">What do i do for your business?</h1>
+            <h1 class="text-blue-500 font-bold text-3xl pb-5">My Services</h1>
+            <h1 class="text-white text-xl">Helping You Build the Future of Web & Technology</h1>
         </div>
 
         <div class="grid grid-flow-col grid-rows-2 gap-10 mr-10 ml-10 mb-20">
             <div class="bg-blue-950 rounded-2xl  p-5 shadow-xl shadow-blue-500/50 ">
                 <i class="fa-brands fa-square-js text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center"> Marketing</h1>
+                <h1 class="text-xl text-white flex justify-center">Java Script</h1>
             </div>
             <div class="bg-blue-950 rounded-2xl  p-5 shadow-lg shadow-blue-500/50 ">
                 <i class="fa-brands fa-node text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center">Digital Marketing</h1>
+                <h1 class="text-xl text-white flex justify-center">Backend Development</h1>
                 
             </div>
             <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 ">
                 <i class="fa-solid fa-database text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center">Digital Marketing</h1>
+                <h1 class="text-xl text-white flex justify-center">Database Management</h1>
                 
             </div>
             <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50">
                 <i class="fa-brands fa-html5 text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center">Digital Marketing</h1>
+                <h1 class="text-xl text-white flex justify-center">Frontend Development</h1>
                 
             </div>
             <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 " >
                 <i class="fa-brands fa-css3-alt text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center">Digital Marketing</h1>
+                <h1 class="text-xl text-white flex justify-center">Frontend Design</h1>
                 
             </div>
             <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50">
                 <i class="fa-brands fa-figma text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center">Digital Marketing</h1>
+                <h1 class="text-xl text-white flex justify-center">Figma (UI/UX)</h1>
                 
             </div>
             <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50">
-                <i class="fa-brands fa-figma text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center">Digital Marketing</h1>
+                <i class="fa-brands fa-github text-4xl text-white flex justify-center"></i>
+                <h1 class="text-xl text-white flex justify-center">GitHub</h1>
                 
             </div>
             <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50">
@@ -87,96 +87,123 @@
         
     </div>
 
-    <div class="aboutMe bg-gray-950 flex justify-between" id="aboutMe">
-        <div class="bg-blue-950 p-10">
-            <h1 class="text-blue-800 text-2xl text-bold pb-5">About Me</h1>
-            <p class="text-white text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse at exercitationem eveniet excepturi quisquam molestias.</p>
-            <button class="bg-blue-800 text-white rounded-full p-4 mt-5 text-bold">Learn more -></button>
+    <div class="aboutMe bg-blue-950 flex flex-col md:flex-row justify-between items-center p-10" id="aboutMe">
+        <div class="bg-blue-950 p-10 text-center md:text-left md:w-1/2">
+            <h1 class="text-blue-500 text-3xl font-bold pb-5">About Me</h1>
+            <p class="text-white text-xl">
+                I am a full-stack developer with expertise in modern web technologies. I specialize in designing efficient, scalable, and user-friendly applications.
+            </p>
+            <button class="bg-blue-800 text-white rounded-full px-6 py-3 mt-5 font-bold">
+                <a href="#contactMe">Learn more →</a>
+            </button>
         </div>
-        <div class=" bg-blue-950 p-10">
-            <img src="./profile.jpg" class=" rounded-2xl" alt="">
+        <div class="bg-blue-950 p-10 flex justify-center md:w-1/2">
+            <img src="./profile.jpg" class="h-40 w-40 md:h-60 md:w-60 rounded-2xl object-cover" alt="Profile Image">
         </div>
-
     </div>
+    
 
     <div class="myPortfolio bg-gray-950 p-10" id="projects">
         <div class="flex flex-col p-5">
             <p class="text-blue-500 text-2xl flex justify-center pb-2">My Portfolio</p>
             <h2 class="text-white text-2xl flex justify-center">Projects I've worked on</h2>
         </div>
-        <div class="grid grid-flow-col grid-rows-2 gap-4 mr-10 ml-10 mb-20">
-            <div class=" ">
-                <h1 class="text-2xl text-blue-500 ">Project 1</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 1/app.html">See More</a></button>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mr-10 ml-10 mb-20">
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 1: Dynamic Content Addition</h1>
+                <p class="text-l text-white">A simple script that adds a paragraph dynamically to a div using JavaScript.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 1/app.html">See More</a></button>
             </div>
-            <div class="">
-                <h1 class="text-2xl text-blue-500 ">Project 2</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 2/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 2: Background Color Changer</h1>
+                <p class="text-l text-white">A color picker input that changes the background of the page dynamically.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 2/app.html">See More</a></button>
             </div>
-            <div class="">
-                <h1 class="text-2xl text-blue-500 ">Project 3</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 3/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 3: Registration Form</h1>
+                <p class="text-l text-white">A form with email, phone, password, password confirmation, and a CAPTCHA verification.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 3/app.html">See More</a></button>
             </div>
-            <div class=" ">
-                <h1 class="text-2xl text-blue-500 ">Project 4</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 4/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 4: To-Do List</h1>
+                <p class="text-l text-white">A task manager with editing and deleting features for completed tasks.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 4/app.html">See More</a></button>
             </div>
-            <div class=" ">
-                <h1 class="text-2xl text-blue-500 ">Project 5</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 5/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 5: Calculator</h1>
+                <p class="text-l text-white">A basic calculator supporting addition, subtraction, multiplication, and division.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 5/app.html">See More</a></button>
             </div>
-            <div class=" ">
-                <h1 class="text-2xl text-blue-500 ">Project 6</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 6/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 6: Image Slider</h1>
+                <p class="text-l text-white">An image slider that changes every 3 seconds or manually via buttons.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 6/app.html">See More</a></button>
             </div>
-            <div class=" ">
-                <h1 class="text-2xl text-blue-500 ">Project 7</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 7/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 7: Fetch API Data</h1>
+                <p class="text-l text-white">Fetching data from an API and displaying it in an ordered list.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 7/app.html">See More</a></button>
             </div>
-            <div class=" ">
-                <h1 class="text-2xl text-blue-500 ">Project 8</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 8/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 8: Timer App</h1>
+                <p class="text-l text-white">A timer that starts with a default value and allows user input for custom timing.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 8/app.html">See More</a></button>
             </div>
-            <div class=" ">
-                <h1 class="text-2xl text-blue-500 ">Project 9</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 9/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 9: Traffic Signal Simulator</h1>
+                <p class="text-l text-white">A working traffic signal system using JavaScript, setTimeout, and setInterval.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 9/app.html">See More</a></button>
             </div>
-            <div class=" ">
-                <h1 class="text-2xl text-blue-500 ">Project 10</h1>
-                <p class="text-l text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus!</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 text-bold"><a href="./Task 10/app.html">See More</a></button>
+            <div>
+                <h1 class="text-2xl text-blue-500">Project 10: Digital Clock</h1>
+                <p class="text-l text-white">A real-time clock displaying the current date and time in 12-hour format.</p>
+                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 10/app.html">See More</a></button>
             </div>
         </div>
     </div>
+    
 
     <div class="contactMe bg-gray-950 p-10" id="contactMe">
-        <div class=" bg-blue-800 p-10 rounded-2xl flex flex-col justify-center shadow-lg shadow-blue-500/50 ring-2">
-            <h1 class="text-2xl text-white text-bold flex justify-center font-bold p-5">Take the next step.</h1>
-            <p class="flex justify-center text-xl text-gray-950 font-bold pb-5">Get in touch with me to learn more about my services and how I can help you</p>
-            <button class="bg-gray-950 rounded-full text-white p-2">Let's Talk -></button>
+        <div class="bg-blue-800 p-10 rounded-2xl flex flex-col justify-center shadow-lg shadow-blue-500/50 ring-2 max-w-3xl mx-auto">
+            <h1 class="text-2xl text-white font-bold text-center p-5">Take the next step.</h1>
+            <p class="text-xl text-gray-950 font-bold text-center pb-5">
+                Get in touch with me to learn more about my services and how I can help you.
+            </p>
+            
+            <form action="https://mail.google.com/mail/?view=cm&fs=1&to=juveriayameen160@gmail.com&su=Inquiry&body=" 
+                  method="get" target="_blank" class="flex flex-col gap-4">
+                <input type="text" name="name" placeholder="Your Name" 
+                       class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500" required>
+                <input type="email" name="email" placeholder="Your Email" 
+                       class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500" required>
+                <textarea name="body" placeholder="Your Message" rows="4"
+                          class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500" required></textarea>
+    
+                <button type="submit" 
+                        class="bg-gray-950 hover:bg-gray-800 rounded-full text-white p-3 font-bold text-lg transition-all">
+                    Let's Talk →
+                </button>
+            </form>
         </div>
     </div>
+    
 
     <div class="footer bg-gray-950 pt-5">
-        <div class=" p-5 border-b-1 border-blue-800 flex justify-center ">
-            <i class="fa-brands fa-linkedin pr-10 text-2xl" style="color: #ffffff;"></i>
-            <i class="fa-brands fa-square-github pr-10 text-2xl" style="color: #ffffff;"></i>
-            <i class="fa-brands fa-square-whatsapp text-2xl" style="color: #ffffff;"></i>
-
+        <div class="p-5 border-b border-blue-800 flex justify-center gap-5">
+            <a href="https://www.linkedin.com/in/juveria-yameen/" target="_blank">
+                <i class="fa-brands fa-linkedin text-4xl text-white hover:text-blue-500"></i>
+            </a>
+            <a href="https://github.com/juvi-160" target="_blank">
+                <i class="fa-brands fa-github text-4xl text-white hover:text-gray-400"></i>
+            </a>
+            <a href="https://wa.me/9030937006" target="_blank">
+                <i class="fa-brands fa-whatsapp text-4xl text-white hover:text-green-500"></i>
+            </a>
         </div>
-        <div class="flex justify-center text-white text-l p-10">
-            <p>2023 &copy; All rights reserved.</p>
+        <div class="flex justify-center text-white text-lg p-5">
+            <p>2025 &copy; All rights reserved.</p>
         </div>
-
     </div>
+    
 </body>
 </html>
