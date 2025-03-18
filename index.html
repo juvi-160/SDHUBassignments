@@ -1,206 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@1,800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body class="bg-gray-950 font-family-Inter">
-    <div class="header bg-gray-950 text-blue-500 flex justify-between p-5 " >
-        <div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@1,800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-950 font-family-Inter">
+    <div
+      class="header bg-gray-950 text-blue-500 flex justify-center items-center p-5"
+    >
+      <!-- Desktop Navigation (Hidden on Small Screens) -->
+      <div class="hidden md:flex space-x-6 text-lg">
+        <a href="./index.html" class="hover:text-white transition">HOME</a>
+        <a href="#aboutMe" class="hover:text-white transition">ABOUT</a>
+        <a href="#myServices" class="hover:text-white transition">SERVICES</a>
 
+        <!-- Projects Dropdown -->
+        <div class="relative group">
+          <button class="hover:text-white transition flex items-center">
+            PROJECTS <i class="fa-solid fa-chevron-down ml-2"></i>
+          </button>
+          <div
+            class="absolute hidden bg-gray-900 text-white mt-2 w-48 rounded-lg shadow-lg group-hover:block"
+          >
+            <a
+              href="./Task 1/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 1</a
+            >
+            <a
+              href="./Task 2/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 2</a
+            >
+            <a
+              href="./Task 3/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 3</a
+            >
+            <a
+              href="./Task 4/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 4</a
+            >
+            <a
+              href="./Task 5/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 5</a
+            >
+            <a
+              href="./Task 6/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 6</a
+            >
+            <a
+              href="./Task 7/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 7</a
+            >
+            <a
+              href="./Task 8/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 8</a
+            >
+            <a
+              href="./Task 9/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 9</a
+            >
+            <a
+              href="./Task 10/app.html"
+              class="block px-4 py-2 hover:bg-gray-800"
+              >Project 10</a
+            >
+          </div>
         </div>
-        <div class="">
-            <a href="./index.html" class="p-5 m-10 hover:text-white">HOME</a>
-            <a href="#aboutMe" class="p-5 m-10 hover:text-white">ABOUT</a>
-            <a href="#myServices" class="p-5 m-10 hover:text-white">SERVICES</a>
-            <a href="#projects" class="p-5 m-10 hover:text-white">PROJECTS</a>
-            <a href="#contactMe" class="p-5 m-10 hover:text-white">CONTACT ME</a>
-        </div>
-        <div>
 
-        </div>
-        
+        <a href="#contactMe" class="hover:text-white transition">CONTACT ME</a>
+      </div>
+
+      <!-- Hamburger Icon (Visible on Small Screens) -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
 
-    <div class="hero bg-[url(imgbg.jpg)] bg-center bg-cover h-[600px]  flex flex-col justify-center items-center ">
-        <p class="text-blue-500 text-2xl font-bold">Welcome to My Creative Space</p>
-        <h1 class="text-white text-center text-3xl font-bold p-10 mr-10 ml-10">I'm a passionate Full Stack Developer with expertise in building modern, user-friendly, and high-performance web applications.</h1>
-        <p class="text-white text-2xl p-5 ml-10 mr-10 font-bold">📌 Let’s collaborate to bring your ideas to life.</p>
-       <div class="flex justify-center ">
-        <button class="bg-blue-800 font-bold text-xl rounded-full px-6 py-3 mt-5 text-white"><a href="#contactMe">Let's Talk -></a></button>
-       </div>
+    <!-- Mobile Navigation (Initially Hidden) -->
+    <div
+      id="mobile-menu"
+      class="hidden bg-gray-900 text-white flex flex-col items-center space-y-4 py-5 md:hidden"
+    >
+      <a href="./index.html" class="hover:text-blue-400">HOME</a>
+      <a href="#aboutMe" class="hover:text-blue-400">ABOUT</a>
+      <a href="#myServices" class="hover:text-blue-400">SERVICES</a>
+
+      <!-- Mobile Projects Dropdown -->
+      <div class="relative w-full text-center">
+        <button id="mobile-projects-toggle" class="hover:text-blue-400">
+          PROJECTS <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div
+          id="mobile-projects-menu"
+          class="hidden flex flex-col space-y-2 pt-2"
+        >
+          <a href="./Task 1/app.html" class="hover:text-blue-400">Project 1</a>
+          <a href="./Task 2/app.html" class="hover:text-blue-400">Project 2</a>
+          <a href="./Task 3/app.html" class="hover:text-blue-400">Project 3</a>
+          <a href="./Task 4/app.html" class="hover:text-blue-400">Project 4</a>
+          <a href="./Task 5/app.html" class="hover:text-blue-400">Project 5</a>
+          <a href="./Task 6/app.html" class="hover:text-blue-400">Project 6</a>
+          <a href="./Task 7/app.html" class="hover:text-blue-400">Project 7</a>
+          <a href="./Task 8/app.html" class="hover:text-blue-400">Project 8</a>
+          <a href="./Task 9/app.html" class="hover:text-blue-400">Project 9</a>
+          <a href="./Task 10/app.html" class="hover:text-blue-400"
+            >Project 10</a
+          >
+        </div>
+      </div>
+
+      <a href="#contactMe" class="hover:text-blue-400">CONTACT ME</a>
     </div>
 
-    <div class="myServices flex flex-col justify-between bg-gray-950" id="myServices">
-        <div class="p-5 md:p-10">
-            <h1 class="text-blue-500 font-bold text-3xl pb-5 md:text-4xl">My Services</h1>
-            <h1 class="text-white text-xl md:text-2xl">Helping You Build the Future of Web & Technology</h1>
-        </div>
-    
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-5 md:mx-10 mb-20">
-            <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105">
-                <i class="fa-brands fa-square-js text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center mt-2">JavaScript</h1>
-            </div>
-            
-            <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105">
-                <i class="fa-brands fa-node text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center mt-2">Backend Development</h1>
-            </div>
-    
-            <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105">
-                <i class="fa-solid fa-database text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center mt-2">Database Management</h1>
-            </div>
-    
-            <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105">
-                <i class="fa-brands fa-html5 text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center mt-2">Frontend Development</h1>
-            </div>
-    
-            <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105">
-                <i class="fa-brands fa-css3-alt text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center mt-2">Frontend Design</h1>
-            </div>
-    
-            <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105">
-                <i class="fa-brands fa-figma text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center mt-2">Figma (UI/UX)</h1>
-            </div>
-    
-            <div class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105">
-                <i class="fa-brands fa-github text-4xl text-white flex justify-center"></i>
-                <h1 class="text-xl text-white flex justify-center mt-2">GitHub</h1>
-            </div>
-    
-    
-        </div>
-    </div>
-    
+    <div
+      class="hero bg-[url(imgbg.jpg)] bg-center bg-cover h-[600px] flex flex-col justify-center items-center text-center px-5 md:h-[700px] md:px-20"
+    >
+      <p class="text-blue-500 text-xl font-bold md:text-2xl">
+        Welcome to My Creative Space
+      </p>
 
-    <div class="aboutMe bg-blue-950 flex flex-col md:flex-row justify-between items-center p-10" id="aboutMe">
-        <div class="bg-blue-950 p-10 text-center md:text-left md:w-1/2">
-            <h1 class="text-blue-500 text-3xl font-bold pb-5">About Me</h1>
-            <p class="text-white text-xl">
-                Experienced in full-stack web development, specializing in React, Node.js, Express, and MongoDB. Proficient in building scalable web applications, REST APIs, and dynamic UI/UX. Strong understanding of database management, authentication, and responsive design. Led and contributed to multiple projects, optimizing performance, security, and user experience.
-            </p>
-            <button class="bg-blue-800 text-white rounded-full px-6 py-3 mt-5 font-bold">
-                <a href="#contactMe">Learn more →</a>
-            </button>
-        </div>
-        <div class="bg-blue-950 p-10 flex justify-center md:w-1/2">
-            <img src="./profile.jpg" class="h-40 w-40 md:h-60 md:w-60 rounded-2xl object-cover" alt="Profile Image">
-        </div>
+      <h1 class="text-white text-2xl font-bold p-5 md:text-3xl md:p-10">
+        I'm a passionate Full Stack Developer with expertise in building modern,
+        user-friendly, and high-performance web applications.
+      </h1>
+
+      <p class="text-white text-xl p-5 font-bold md:text-2xl">
+        📌 Let’s collaborate to bring your ideas to life.
+      </p>
+
+      <div class="flex justify-center">
+        <button
+          class="bg-blue-800 font-bold text-l rounded-full px-4 py-3 mt-5 text-white hover:bg-blue-700 transition md:text-2xl md:px-8 md:py-4"
+        >
+          <a href="#contactMe">Let's Talk →</a>
+        </button>
+      </div>
     </div>
-    
+
+    <div
+      class="myServices flex flex-col justify-between bg-gray-950"
+      id="myServices"
+    >
+      <div class="p-5 md:p-10">
+        <h1 class="text-blue-500 font-bold text-3xl pb-5 md:text-4xl">
+          My Services
+        </h1>
+        <h1 class="text-white text-xl md:text-2xl">
+          Helping You Build the Future of Web & Technology
+        </h1>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-5 md:mx-10 mb-20"
+      >
+        <div
+          class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105"
+        >
+          <i
+            class="fa-brands fa-square-js text-4xl text-white flex justify-center"
+          ></i>
+          <h1 class="text-xl text-white flex justify-center mt-2">
+            JavaScript
+          </h1>
+        </div>
+
+        <div
+          class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105"
+        >
+          <i
+            class="fa-brands fa-node text-4xl text-white flex justify-center"
+          ></i>
+          <h1 class="text-xl text-white flex justify-center mt-2">
+            Backend Development
+          </h1>
+        </div>
+
+        <div
+          class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105"
+        >
+          <i
+            class="fa-solid fa-database text-4xl text-white flex justify-center"
+          ></i>
+          <h1 class="text-xl text-white flex justify-center mt-2">
+            Database Management
+          </h1>
+        </div>
+
+        <div
+          class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105"
+        >
+          <i
+            class="fa-brands fa-html5 text-4xl text-white flex justify-center"
+          ></i>
+          <h1 class="text-xl text-white flex justify-center mt-2">
+            Frontend Development
+          </h1>
+        </div>
+
+        <div
+          class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105"
+        >
+          <i
+            class="fa-brands fa-css3-alt text-4xl text-white flex justify-center"
+          ></i>
+          <h1 class="text-xl text-white flex justify-center mt-2">
+            Frontend Design
+          </h1>
+        </div>
+
+        <div
+          class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105"
+        >
+          <i
+            class="fa-brands fa-figma text-4xl text-white flex justify-center"
+          ></i>
+          <h1 class="text-xl text-white flex justify-center mt-2">
+            Figma (UI/UX)
+          </h1>
+        </div>
+
+        <div
+          class="bg-blue-950 rounded-2xl p-5 shadow-lg shadow-blue-500/50 transition hover:scale-105"
+        >
+          <i
+            class="fa-brands fa-github text-4xl text-white flex justify-center"
+          ></i>
+          <h1 class="text-xl text-white flex justify-center mt-2">GitHub</h1>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="aboutMe bg-blue-950 flex flex-col md:flex-row justify-between items-center p-10"
+      id="aboutMe"
+    >
+      <div class="bg-blue-950 p-10 text-center md:text-left md:w-1/2">
+        <h1 class="text-blue-500 text-3xl font-bold pb-5">About Me</h1>
+        <p class="text-white text-xl">
+          Experienced in full-stack web development, specializing in React,
+          Node.js, Express, and MongoDB. Proficient in building scalable web
+          applications, REST APIs, and dynamic UI/UX. Strong understanding of
+          database management, authentication, and responsive design. Led and
+          contributed to multiple projects, optimizing performance, security,
+          and user experience.
+        </p>
+        <button
+          class="bg-blue-800 text-white rounded-full px-6 py-3 mt-5 font-bold"
+        >
+          <a href="#contactMe">Learn more →</a>
+        </button>
+      </div>
+      <div class="bg-blue-950 p-10 flex justify-center md:w-1/2">
+        <img
+          src="./profile.jpg"
+          class="h-40 w-40 md:h-60 md:w-60 rounded-2xl object-cover"
+          alt="Profile Image"
+        />
+      </div>
+    </div>
 
     <div class="myPortfolio bg-gray-950 p-10" id="projects">
-        <div class="flex flex-col p-5">
-            <p class="text-blue-500 text-2xl flex justify-center pb-2">My Portfolio</p>
-            <h2 class="text-white text-2xl flex justify-center">Projects I've worked on</h2>
+      <div class="flex flex-col p-5">
+        <p class="text-blue-500 text-2xl flex justify-center pb-2">
+          My Portfolio
+        </p>
+        <h2 class="text-white text-2xl flex justify-center">
+          Projects I've worked on
+        </h2>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mr-10 ml-10 mb-20"
+      >
+        <div>
+          <h1 class="text-2xl text-blue-500">
+            Project 1: Dynamic Content Addition
+          </h1>
+          <p class="text-l text-white">
+            A simple script that adds a paragraph dynamically to a div using
+            JavaScript.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 1/app.html">See More</a>
+          </button>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mr-10 ml-10 mb-20">
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 1: Dynamic Content Addition</h1>
-                <p class="text-l text-white">A simple script that adds a paragraph dynamically to a div using JavaScript.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 1/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 2: Background Color Changer</h1>
-                <p class="text-l text-white">A color picker input that changes the background of the page dynamically.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 2/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 3: Registration Form</h1>
-                <p class="text-l text-white">A form with email, phone, password, password confirmation, and a CAPTCHA verification.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 3/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 4: To-Do List</h1>
-                <p class="text-l text-white">A task manager with editing and deleting features for completed tasks.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 4/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 5: Calculator</h1>
-                <p class="text-l text-white">A basic calculator supporting addition, subtraction, multiplication, and division.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 5/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 6: Image Slider</h1>
-                <p class="text-l text-white">An image slider that changes every 3 seconds or manually via buttons.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 6/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 7: Fetch API Data</h1>
-                <p class="text-l text-white">Fetching data from an API and displaying it in an ordered list.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 7/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 8: Timer App</h1>
-                <p class="text-l text-white">A timer that starts with a default value and allows user input for custom timing.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 8/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 9: Traffic Signal Simulator</h1>
-                <p class="text-l text-white">A working traffic signal system using JavaScript, setTimeout, and setInterval.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 9/app.html">See More</a></button>
-            </div>
-            <div>
-                <h1 class="text-2xl text-blue-500">Project 10: Digital Clock</h1>
-                <p class="text-l text-white">A real-time clock displaying the current date and time in 12-hour format.</p>
-                <button class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"><a href="./Task 10/app.html">See More</a></button>
-            </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">
+            Project 2: Background Color Changer
+          </h1>
+          <p class="text-l text-white">
+            A color picker input that changes the background of the page
+            dynamically.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 2/app.html">See More</a>
+          </button>
         </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">Project 3: Registration Form</h1>
+          <p class="text-l text-white">
+            A form with email, phone, password, password confirmation, and a
+            CAPTCHA verification.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 3/app.html">See More</a>
+          </button>
+        </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">Project 4: To-Do List</h1>
+          <p class="text-l text-white">
+            A task manager with editing and deleting features for completed
+            tasks.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 4/app.html">See More</a>
+          </button>
+        </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">Project 5: Calculator</h1>
+          <p class="text-l text-white">
+            A basic calculator supporting addition, subtraction, multiplication,
+            and division.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 5/app.html">See More</a>
+          </button>
+        </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">Project 6: Image Slider</h1>
+          <p class="text-l text-white">
+            An image slider that changes every 3 seconds or manually via
+            buttons.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 6/app.html">See More</a>
+          </button>
+        </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">Project 7: Fetch API Data</h1>
+          <p class="text-l text-white">
+            Fetching data from an API and displaying it in an ordered list.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 7/app.html">See More</a>
+          </button>
+        </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">Project 8: Timer App</h1>
+          <p class="text-l text-white">
+            A timer that starts with a default value and allows user input for
+            custom timing.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 8/app.html">See More</a>
+          </button>
+        </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">
+            Project 9: Traffic Signal Simulator
+          </h1>
+          <p class="text-l text-white">
+            A working traffic signal system using JavaScript, setTimeout, and
+            setInterval.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 9/app.html">See More</a>
+          </button>
+        </div>
+        <div>
+          <h1 class="text-2xl text-blue-500">Project 10: Digital Clock</h1>
+          <p class="text-l text-white">
+            A real-time clock displaying the current date and time in 12-hour
+            format.
+          </p>
+          <button
+            class="bg-blue-800 text-white rounded-full p-2 mt-5 font-bold"
+          >
+            <a href="./Task 10/app.html">See More</a>
+          </button>
+        </div>
+      </div>
     </div>
-    
 
     <div class="contactMe bg-gray-950 p-10" id="contactMe">
-        <div class="bg-blue-800 p-10 rounded-2xl flex flex-col justify-center shadow-lg shadow-blue-500/50 ring-2 max-w-3xl mx-auto">
-            <h1 class="text-2xl text-white font-bold text-center p-5">Take the next step.</h1>
-            <p class="text-xl text-gray-950 font-bold text-center pb-5">
-                Get in touch with me to learn more about my services and how I can help you.
-            </p>
-            
-            <form action="https://mail.google.com/mail/?view=cm&fs=1&to=juveriayameen160@gmail.com&su=Inquiry&body=" 
-                  method="get" target="_blank" class="flex flex-col gap-4">
-                <input type="text" name="name" placeholder="Your Name" 
-                       class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500" required>
-                <input type="email" name="email" placeholder="Your Email" 
-                       class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500" required>
-                <textarea name="body" placeholder="Your Message" rows="4"
-                          class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500" required></textarea>
-    
-                <button type="submit" 
-                        class="bg-gray-950 hover:bg-gray-800 rounded-full text-white p-3 font-bold text-lg transition-all">
-                    Let's Talk →
-                </button>
-            </form>
-        </div>
+      <div
+        class="bg-blue-800 p-10 rounded-2xl flex flex-col justify-center shadow-lg shadow-blue-500/50 ring-2 max-w-3xl mx-auto"
+      >
+        <h1 class="text-2xl text-white font-bold text-center p-5">
+          Take the next step.
+        </h1>
+        <p class="text-xl text-gray-950 font-bold text-center pb-5">
+          Get in touch with me to learn more about my services and how I can
+          help you.
+        </p>
+
+        <form
+          action="https://mail.google.com/mail/?view=cm&fs=1&to=juveriayameen160@gmail.com&su=Inquiry&body="
+          method="get"
+          target="_blank"
+          class="flex flex-col gap-4"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500"
+            required
+          />
+          <textarea
+            name="body"
+            placeholder="Your Message"
+            rows="4"
+            class="bg-gray-950 text-white p-3 rounded-md focus:ring-2 focus:ring-blue-500"
+            required
+          ></textarea>
+
+          <button
+            type="submit"
+            class="bg-gray-950 hover:bg-gray-800 rounded-full text-white p-3 font-bold text-lg transition-all"
+          >
+            Let's Talk →
+          </button>
+        </form>
+      </div>
     </div>
-    
 
     <div class="footer bg-gray-950 pt-5">
-        <div class="p-5 border-b border-blue-800 flex justify-center gap-5">
-            <a href="https://www.linkedin.com/in/juveria-yameen/" target="_blank">
-                <i class="fa-brands fa-linkedin text-4xl text-white hover:text-blue-500"></i>
-            </a>
-            <a href="https://github.com/juvi-160" target="_blank">
-                <i class="fa-brands fa-github text-4xl text-white hover:text-gray-400"></i>
-            </a>
-            <a href="https://wa.me/9030937006" target="_blank">
-                <i class="fa-brands fa-whatsapp text-4xl text-white hover:text-green-500"></i>
-            </a>
-        </div>
-        <div class="flex justify-center text-white text-lg p-5">
-            <p>2025 &copy; All rights reserved.</p>
-        </div>
+      <div class="p-5 border-b border-blue-800 flex justify-center gap-5">
+        <a href="https://www.linkedin.com/in/juveria-yameen/" target="_blank">
+          <i
+            class="fa-brands fa-linkedin text-4xl text-white hover:text-blue-500"
+          ></i>
+        </a>
+        <a href="https://github.com/juvi-160" target="_blank">
+          <i
+            class="fa-brands fa-github text-4xl text-white hover:text-gray-400"
+          ></i>
+        </a>
+        <a href="https://wa.me/9030937006" target="_blank">
+          <i
+            class="fa-brands fa-whatsapp text-4xl text-white hover:text-green-500"
+          ></i>
+        </a>
+      </div>
+      <div class="flex justify-center text-white text-lg p-5">
+        <p>2025 &copy; All rights reserved.</p>
+      </div>
     </div>
-    
-</body>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+
+      document
+        .getElementById("mobile-projects-toggle")
+        .addEventListener("click", function () {
+          document
+            .getElementById("mobile-projects-menu")
+            .classList.toggle("hidden");
+        });
+    </script>
+  </body>
 </html>
